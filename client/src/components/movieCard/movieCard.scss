@@ -1,0 +1,113 @@
+@import '../../common-styles/variables.scss';
+
+.movieCard {
+	height: 350px;
+	width: 250px;
+	background-color: white;
+	margin: 20px 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: $shadow;
+	box-shadow: $shadow;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	.top {
+		height: 250px;
+		cursor: pointer;
+		position: relative;
+		.movie-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.shadowOverImg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: black;
+			font-weight: 600;
+			h1 {
+				align-self: vertical;
+			}
+			background: hsla(0, 0%, 100%, 1);
+			background: radial-gradient(
+				circle,
+				hsla(0, 0%, 100%, 1) 0%,
+				hsla(0, 3%, 64%, 1) 27%,
+				hsla(0, 1%, 32%, 1) 62%,
+				hsla(0, 0%, 0%, 1) 100%
+			);
+
+			background: -moz-radial-gradient(
+				circle,
+				hsla(0, 0%, 100%, 1) 0%,
+				hsla(0, 3%, 64%, 1) 27%,
+				hsla(0, 1%, 32%, 1) 62%,
+				hsla(0, 0%, 0%, 1) 100%
+			);
+
+			background: -webkit-radial-gradient(
+				circle,
+				hsla(0, 0%, 100%, 1) 0%,
+				hsla(0, 3%, 64%, 1) 27%,
+				hsla(0, 1%, 32%, 1) 62%,
+				hsla(0, 0%, 0%, 1) 100%
+			);
+			transition: opacity 0.5s ease-in-out;
+		}
+		.shadowOverImg:hover {
+			opacity: 0.8;
+		}
+	}
+	.bottom {
+		flex: 1;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10px;
+		.left {
+			flex: 3;
+			display: flex;
+			flex-direction: column;
+			padding: 0 10px;
+			align-items: start;
+
+			.title {
+				font-size: 16px;
+				font-weight: 600;
+			}
+			.rating {
+				font-size: 10px;
+				color: grey;
+				margin: 5px;
+			}
+		}
+		.right {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.age {
+				font-size: 10px;
+				color: grey;
+				margin: 5px;
+			}
+			.year {
+				font-size: 12px;
+				margin: 5px;
+				font-weight: 600;
+			}
+		}
+	}
+}
+.iconButton {
+	border: none;
+	background-color: inherit;
+	display: inline-block;
+	cursor: pointer;
+}

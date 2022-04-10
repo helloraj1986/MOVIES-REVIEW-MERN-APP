@@ -1,0 +1,5 @@
+.contentContainer {
+	display: flex;
+	min-width: 550px;
+	overflow-x: scroll;
+}

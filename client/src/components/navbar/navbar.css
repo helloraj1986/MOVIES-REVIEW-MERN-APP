@@ -1,0 +1,44 @@
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .navbarWrapper {
+  height: 100%;
+  background-color: #011627;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  color: #fdfffc;
+}
+
+.navbar .navbarWrapper .logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fdfffc;
+}
+
+.navbar .navbarWrapper input {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #f4f2f2;
+  outline: none;
+}
+
+.navbar .navbarWrapper input:focus {
+  outline: none;
+  background: #ded2d2;
+  color: black;
+}
+/*# sourceMappingURL=navbar.css.map */

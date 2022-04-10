@@ -1,0 +1,40 @@
+@import '../../common-styles/variables.scss';
+.movie1 {
+	width: 90vw;
+	height: 550px;
+	margin: 70px auto;
+
+	display: flex;
+	align-items: center;
+	.left {
+		flex: 3;
+		background-color: white;
+		height: 90%;
+		margin: 10px;
+		border-radius: 10px;
+		background-color: black;
+		position: relative;
+		box-shadow: 4px 4px 23px 2px rgba(1, 22, 39, 0.38);
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+			opacity: 0.15;
+		}
+		.imgFront {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			opacity: 1;
+
+			box-shadow: 4px 4px 23px 2px rgba(255, 255, 255, 0.9);
+		}
+	}
+	.right {
+		flex: 2;
+	}
+}

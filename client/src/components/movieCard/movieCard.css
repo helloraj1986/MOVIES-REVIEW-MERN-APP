@@ -1,0 +1,142 @@
+.movieCard {
+  height: 350px;
+  width: 250px;
+  background-color: white;
+  margin: 20px 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 23px 1px rgba(1, 22, 39, 0.38);
+  box-shadow: 2px 2px 23px 1px rgba(1, 22, 39, 0.38);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.movieCard .top {
+  height: 250px;
+  cursor: pointer;
+  position: relative;
+}
+
+.movieCard .top .movie-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.movieCard .top .shadowOverImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-weight: 600;
+  background: white;
+  background: radial-gradient(circle, white 0%, #a6a0a0 27%, #525151 62%, black 100%);
+  background: -webkit-radial-gradient(circle, white 0%, #a6a0a0 27%, #525151 62%, black 100%);
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.movieCard .top .shadowOverImg h1 {
+  -ms-flex-item-align: vertical;
+      -ms-grid-row-align: vertical;
+      align-self: vertical;
+}
+
+.movieCard .top .shadowOverImg:hover {
+  opacity: 0.8;
+}
+
+.movieCard .bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.movieCard .bottom .left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.movieCard .bottom .left .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.movieCard .bottom .left .rating {
+  font-size: 10px;
+  color: grey;
+  margin: 5px;
+}
+
+.movieCard .bottom .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movieCard .bottom .right .age {
+  font-size: 10px;
+  color: grey;
+  margin: 5px;
+}
+
+.movieCard .bottom .right .year {
+  font-size: 12px;
+  margin: 5px;
+  font-weight: 600;
+}
+
+.iconButton {
+  border: none;
+  background-color: inherit;
+  display: inline-block;
+  cursor: pointer;
+}
+/*# sourceMappingURL=movieCard.css.map */
